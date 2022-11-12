@@ -10,6 +10,11 @@ pool:
   vmImage: windows-2019
 
 steps:
+
+- script: |
+    git checkout v1.3.x
+  displayName: 'git checkout'
+
 - task: NodeTool@0
   inputs:
     versionSource: 'spec'
