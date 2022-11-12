@@ -23,6 +23,21 @@ steps:
     architecture: 'x64'
 
 - script: |
+    npm install -g bower@1.3.9
+  displayName: 'npm install bower'
+
+- script: |
+    npm install -g grunt-cli@v1.2.0
+  displayName: 'npm install grunt'
+
+- script: |
+    node --version
+  displayName: 'npm install bower'
+
+- script: |
+    python --version
+  displayName: 'npm install bower'
+
+- script: |
     npm install
-    npm run build
   displayName: 'npm install and build'
